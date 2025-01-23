@@ -1,0 +1,17 @@
+쉘 스크립트 생성(메일 전송)
+
+root@global:/script# vi mail.sh
+#!/bin/bash
+# 메일 제목, 내용, 송신자, 수신자 설정
+SUBJECT="메일 제목"
+BODY="메일 본문 내용"
+SENDER="cctv@hanwhatest.com"
+RECIPIENT="수신자 이메일"
+# 메일 전송
+echo "$BODY" | mailx -s "$SUBJECT" -r "$SENDER" "$RECIPIENT"
+echo "메일이 전송되었습니다."
+root@global:/script# chmod +x mail.sh
+root@global:/script# ./mail.sh
+mailx: command not found
+root@global:/script# apt install mailx
+root@global:/script# ./mail.sh
