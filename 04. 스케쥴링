@@ -1,0 +1,3 @@
+root@global:/script# crontab -l
+root@global:/script# crontab -e
+0 7 * * * /bin/sh /script/check_disk_usage_mail.sh >> /script/check_disk_usage_mail.log 2>&1
