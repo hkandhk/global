@@ -1,0 +1,11 @@
+쉘 스크립트 생성(디스크 사용량 체크)
+
+root@global:~#
+root@global:/# mkdir /script
+root@global:/# cd /script
+root@global:/script#
+root@global:/script# vi check_disk_usage.sh
+#!/bin/bash
+df -h
+root@global:/script# chmod +x check_disk_usage.sh
+root@global:/script# ./check_disk_usage.sh
