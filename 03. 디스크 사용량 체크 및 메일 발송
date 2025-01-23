@@ -38,3 +38,6 @@ fi
 
 # 종료 메시지
 echo "디스크 용량 상태가 이메일로 발송되었습니다."
+
+root@global:/script# chmod +x check_disk_usage_mail.sh
+root@global:/script# ./check_disk_usage_mail.sh
